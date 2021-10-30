@@ -1,0 +1,36 @@
+@echo off
+color 0a
+title Ping $c0tt.shittz
+cls
+echo Welcome
+echo.
+echo.
+echo Dev by $c0tt
+echo.
+echo.
+echo   ______              ______     __      __     
+echo  /      \            /      \   /  |    /  |    
+echo /$$$$$$  |  _______ /$$$$$$  | _$$ |_  _$$ |_   
+echo $$ \__$$/  /       |$$$  \$$ |/ $$   |/ $$   |  
+echo $$      \ /$$$$$$$/ $$$$  $$ |$$$$$$/ $$$$$$/   
+echo  $$$$$$  |$$ |      $$ $$ $$ |  $$ | __ $$ | __ 
+echo /  \__$$ |$$ \_____ $$ \$$$$ |  $$ |/  |$$ |/  |
+echo $$    $$/ $$       |$$   $$$/   $$  $$/ $$  $$/ 
+echo $$$$$$/   $$$$$$$/  $$$$$$/     $$$$/   $$$$/  
+echo                                                 
+echo                                                 
+echo                                                 
+echo Ingrese una URL/IP para hacer ping.
+echo.
+set /p url=URL/IP:
+echo.
+echo Please enter in the power that you wish.
+echo.
+set /p power=Power (1-65500):
+echo.
+echo.
+echo.
+echo Start ping..
+echo.
+ping %url% -t -l %power%
+pause
